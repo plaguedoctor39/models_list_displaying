@@ -10,6 +10,9 @@ def books_view(request, pub_date=None):
         context = {'books': books_list,
                    'pub_date': pub_date}
     else:
+
         books_list = list(Book.objects.all())
+        # for book in books_list:
+        #     print(book.pub_date)
         context = {'books': books_list}
     return render(request, template, context)

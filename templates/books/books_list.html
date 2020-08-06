@@ -13,7 +13,7 @@
             <div class="book col-md-4">
                 <h2>{{ book.name }}</h2>
                 <p>{{ book.author }}</p>
-                <p>{{ book.pub_date }}</p>
+                <p><a href={{  book.pub_date }}>{{ book.pub_date }}</a></p>
             </div>
             {% endfor %}
         </div>
